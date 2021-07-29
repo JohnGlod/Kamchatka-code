@@ -1,4 +1,4 @@
-//Переменные 
+//Переменные
 @import "../scss/general/_variables.scss";
 //Миксины
 @import "../scss/general/_mixins.scss";
@@ -6,7 +6,6 @@
 @import "../scss/general/_fonts.scss";
 
 //Добавляется после цифр // &display=swap&subset=cyrillic-ext
-
 
 // Иконочные шрифты
 // @import "general/icons.scss";
@@ -18,15 +17,17 @@
 
 // Обнуление, общие параментры
 @import "../scss/general/_reset.scss";
-body{
+
+
+body {
     color: #000;
     font-size: 14px;
-    &._lock{
+    font-family: $fontFamilyMain;
+    font-weight: 400;
+    &._lock {
         overflow: hidden;
     }
-
 }
-
 
 .wrapper {
     width: 100%;
@@ -34,7 +35,8 @@ body{
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    &._loader{}
+    &._loader {
+    }
 }
 
 // ._container {
@@ -52,12 +54,10 @@ body{
 //     }
 // }
 
-.page{
+.page {
     flex: 1 1 auto;
 }
-
 
 // User Interface
 @import "../scss/general/_forms.scss";
 @import "../scss/general/_ui.scss";
-

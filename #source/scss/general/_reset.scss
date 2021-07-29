@@ -3,8 +3,8 @@
 :focus,:active{outline: none;}
 aside, nav, footer, header, section{display: block;}
 html, body{height: 100%; min-width: $minWidth;}
-body{line-height: 1; font-size: 14px; font-family: $fontfamily; -ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%; -webkit-box-size-adjust: 100%;}
-input, button, textarea{font-family: $fontfamily;}
+body{line-height: 1; font-size: 14px; font-family: $fontFamilyMain; -ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%; -webkit-box-size-adjust: 100%;}
+input, button, textarea{font-family: $fontFamilyMain;}
 input::-ms-clear{display: none;}
 button{cursor:pointer;}
 button::-moz-focus-inner {padding: 0; border: 0;}
