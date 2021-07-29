@@ -1,9 +1,9 @@
 //Переменные 
-@import "general/variables.scss";
+@import "../scss/general/_variables.scss";
 //Миксины
-@import "general/mixins.scss";
+@import "../scss/general/_mixins.scss";
 //Шрифты
-@import "general/fonts.scss";
+@import "../scss/general/_fonts.scss";
 
 //Добавляется после цифр // &display=swap&subset=cyrillic-ext
 
@@ -11,28 +11,13 @@
 // Иконочные шрифты
 // @import "general/icons.scss";
 
-// Шрифт по умолчанию
-$fontfamily: "Larsseit";
-
-// Переменные 
-$minWidth: 320px;
-$maxWidth: 1920;
-$maxWidthContainer: 950;
-$md1: $maxWidthContainer + 12;
-$md2: 991.98;
-$md3: 767.98;
-$md4: 479.98;
-
-// Цвета
-
-
 // Cтруктура сайта
-@import "../scss/modules/header.scss";
-@import "../scss/modules/main.scss";
-@import "../scss/modules/footer.scss";
+@import "../scss/modules/_header.scss";
+@import "../scss/modules/_main.scss";
+@import "../scss/modules/_footer.scss";
 
 // Обнуление, общие параментры
-@import "general/null.scss";
+@import "../scss/general/_reset.scss";
 body{
     color: #000;
     font-size: 14px;
@@ -73,6 +58,6 @@ body{
 
 
 // User Interface
-@import "general/forms.scss";
-@import "general/ui.scss";
+@import "../scss/general/_forms.scss";
+@import "../scss/general/_ui.scss";
 
