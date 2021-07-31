@@ -10,53 +10,14 @@
 // Иконочные шрифты
 // @import "general/icons.scss";
 
-// Cтруктура сайта
-@import "../scss/modules/_header.scss";
-@import "../scss/modules/_main.scss";
-@import "../scss/modules/_footer.scss";
-
 // Обнуление, общие параментры
 @import "../scss/general/_reset.scss";
 
-
-body {
-    color: #000;
-    font-size: 14px;
-    font-family: $fontFamilyMain;
-    font-weight: 400;
-    &._lock {
-        overflow: hidden;
-    }
-}
-
-.wrapper {
-    width: 100%;
-    min-height: 100%;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    &._loader {
-    }
-}
-
-// ._container {
-//     max-width: $maxWidthContainer + px;
-//     margin: 0 auto;
-//     @media (max-width: $md1+px) {
-//         min-width: 970px;
-//     }
-//     @media (max-width: $md2+px) {
-//         min-width: 750px;
-//     }
-//     @media (max-width: $md3+px) {
-//         min-width: none;
-//         padding: 0 10px;
-//     }
-// }
-
-.page {
-    flex: 1 1 auto;
-}
+// Cтруктура сайта
+@import "../scss/general/_overall.scss";
+@import "../scss/modules/_header.scss";
+@import "../scss/modules/_main.scss";
+@import "../scss/modules/_footer.scss";
 
 // User Interface
 @import "../scss/general/_forms.scss";

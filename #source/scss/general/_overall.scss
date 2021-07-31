@@ -1,0 +1,41 @@
+
+body {
+  color: #000;
+  font-size: 14px;
+  font-family: $fontFamilyMain;
+  font-weight: 400;
+  &._lock {
+      overflow: hidden;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  &._loader {
+  }
+}
+
+.container {
+    max-width: $maxWidthContainer + px;
+    margin: 0 auto;
+    padding: 0 30px;
+    /* @media (max-width: $md1+px) {
+        min-width: 970px;
+    }
+    @media (max-width: $md2+px) {
+        min-width: 750px;
+    }
+    @media (max-width: $md3+px) {
+        min-width: none;
+        padding: 0 10px;
+    } */
+} 
+
+.page {
+  flex: 1 1 auto;
+  width: 100%;
+}
