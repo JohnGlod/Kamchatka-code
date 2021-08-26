@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="ru">
-@@include('_head.html',{ "title":"Камчатка", })
+  @@include('_head.html',{ "title":"Камчатка", })
 
-<body>
+  <body>
     <div class="wrapper">
-        @@include('_header.html',{})
-        <main class="page">
-            <section class="first">
-                <h1 class="first__title">Мечты о далекой Камчатке - близко</h1>
-                <button class="first__button"></button>
-                <p class="first__text">
-                    Тур перевернет ваш мир с ног на голову и оставит впечатления на всю жизнь. 
-                </p>
-                <a class="first__schedule schedule" href="#" >Расписание тура 
-                    <button class="schedule__btn button button__arrow button__arrow--interact"></button>
-                </a>
-                <ul class="first__social social">
-                    <li class="social__links">
-                        <a href="#"></a>
-                    </li>
-                    <li class="social__links">
-                        <a href="#"></a>
-                    </li>
-                </ul>
-                <div class="first__slider"></div>
-            </section>
-        </main>
-        @@include('_footer.html',{})
+      @@include('_header.html',{})
+      <main class="page">
+        <section class="first">
+          <div class="container">
+						<h1 class="first__title">Мечты о далекой Камчатке - близко</h1>
+          <button class="first__button"></button>
+          <p class="first__text">
+            Тур перевернет ваш мир с ног на голову и оставит впечатления на всю
+            жизнь.
+          </p>
+          <a class="first__schedule schedule" href="#"
+            >Расписание тура
+            <button
+              class="schedule__btn button button__arrow button__arrow--interact"
+            ></button>
+          </a>
+          <ul class="first__social social">
+            <li class="social__links">
+            	<a href="#"></a>
+            </li>
+            <li class="social__links">
+              <a href="#"></a>
+            </li>
+          </ul>
+          <div class="first__slider"></div>
+					</div>
+        </section>
+        <section class=""></section>
+      </main>
+      @@include('_footer.html',{})
     </div>
     <!-- @@include('_popup.html',{}) -->
     @@include('_js.html',{})
-</body>
-
+  </body>
 </html>
