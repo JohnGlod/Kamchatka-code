@@ -1,9 +1,12 @@
 .header {
-  
+  position: absolute;
+  inset: 0;
+  padding: 20px 0 120px;
+  z-index: 5;
   &__container {
     min-height: 38px;
     padding-top: 20px;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,19 +53,19 @@
   }
 
   &__list {
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    gap: 56px;
+    gap: 56px; */
   }
 
   &__link {
   }
 
   &__button {
-    margin-left: 64px;
+  /*   margin-left: 64px;
     padding: 10px 32px;
     border: 2px solid var(--color-black);
-    border-radius: 5px;
+    border-radius: 5px; */
   }
 }
 
