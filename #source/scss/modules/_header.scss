@@ -3,6 +3,12 @@
   inset: 0;
   z-index: 5;
   height: 110px;
+  @media (min-width: 768px) {
+    display: none;
+  }
+  @media (min-width: 1440px) {
+    
+  }
   &__container {
     min-height: 38px;
     padding-top: 20px;
@@ -10,8 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 320px; 
-    
+
   }
 
   &__logo {
@@ -39,35 +44,58 @@
 }
 .menu {
 
+  
   &__icon {
-
   }
 
   &__body {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
     font-size: 16px;
     line-height: 118%;
     color: var(--color-black);
-    display: none;
-    &_active {
-      display: block;
+
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 10;
+    transform: translate(0px, -100%);
+    transition: transform .3 ease-in 10ms;
+    &._active {
+      transform: translate(0px, 0%);
     }
   }
 
   &__list {
-    /* display: flex;
+    display: flex;
     justify-content: center;
-    gap: 56px; */
+    gap: 56px;
+    flex-direction: column;
+    align-items: center;
+  
   }
 
   &__link {
+    font-size: 20px;
+    line-height: 32px;
+    color: #212121;
   }
 
   &__button {
-  /*   margin-left: 64px;
+    border: 1px solid var(--color-black);
     padding: 10px 32px;
-    border: 2px solid var(--color-black);
-    border-radius: 5px; */
-  }
+    border-radius: 5px;
+    color: inherit;
+    cursor: pointer;
+  }  
 }
 
 .icon-menu {
@@ -76,6 +104,8 @@
 		width: 30px;
 		height: 18px;
 		cursor: pointer;
+    z-index: 15;
+
 		span{
 			transition: all 0.3s ease 0s;
 			top: calc(50% - 1px);

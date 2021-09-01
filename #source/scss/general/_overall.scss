@@ -23,10 +23,16 @@ body {
   margin: 0 auto; 
   min-width: 320px;
   padding: 0 16px;
+  @media (min-width: 768px) {
+    min-width: 768px;
+    padding: 0 40px;
+  }
+  @media (min-width: 1440px) {
+    min-width: 1440px;
+    padding: 0 95px;
+  }
     /* max-width: $maxWidthContainer + px;
-    /* @media (max-width: $md1+px) {
-        min-width: 970px;
-    }
+ 
     @media (max-width: $md2+px) {
         min-width: 750px;
     }

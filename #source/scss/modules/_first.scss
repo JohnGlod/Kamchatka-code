@@ -29,6 +29,11 @@
     font-size: 40px;
     line-height: 120%;
     margin-bottom: 24px;
+    
+    @media (min-width: 768px) {
+      font-size: 56px;
+      line-height: 114%;
+    }
   }
 
   &__button {
@@ -44,6 +49,10 @@
     padding: 16px 8px;
     text-transform: uppercase;
     margin-bottom: 40px;
+    @media (min-width: 768px) {
+      font-size: 30px;
+      line-height: 187%;
+    }
   }
 
   &__text {
@@ -51,6 +60,11 @@
     font-size: 18px;
     line-height: 156%;
     margin-bottom: 16px;
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 140%;
+      width: 50%;
+    }
   }
 
   &__schedule {
@@ -71,6 +85,8 @@
   }
 
   &__slider {
+  
+    
   }
 }
 .schedule {
@@ -102,8 +118,13 @@
 
 .first-slider {
   margin-top: 32px;
-  
+  @media (min-width: 1440px) {
+    flex-basis: 760px;
+    justify-self: end;
+    width: 760px;
+  }
   &__wrapper {
+    justify-self: end;
   }
 
   &__item {
