@@ -1,6 +1,54 @@
 .about {
   padding: 50px 0;
-
+  position: relative;
+  &__bg {
+    position: relative;
+    &::after{
+      content: '';
+      top: 49%;
+      right: 0;
+      position: absolute;
+      background-image: url('../../img/about/about-bg.jpg');
+      width: 100%;
+      height: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: -2;
+    }
+    &::before{
+      content: '';
+      top: 49%;
+      right: 0;
+      position: absolute;
+      background: linear-gradient(182.6deg, #FFFFFF 3.35%, rgba(255, 255, 255, 0.572235) 36.22%, rgba(255, 255, 255, 0) 65.79%);
+      z-index: -1;
+      width: 100%;
+      height: 17%;
+    }
+  }
+  &::after{
+    content: '';
+    top: 50%;
+    right: 0;
+    position: absolute;
+    background: linear-gradient(2.4deg, #000000 12.72%, rgba(0, 0, 0, 0.633721) 44.36%, rgba(0, 0, 0, 0) 70.61%);
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+  }
+  &::before{
+    content: '';
+    bottom: 27%;
+    left: 9%;
+    position: absolute;
+    background-image: url('../../img/about/airplane.png');
+    background-repeat: no-repeat;
+    z-index: 1;
+    transform: rotate(3.3deg);
+    width: 568.71px;
+    height: 231.7px;
+  }
   &__tittle {
     margin-bottom: 26px;
   }
@@ -22,17 +70,39 @@
   }
 
   &__data {
-    background: linear-gradient(182.6deg, #FFFFFF 3.35%, rgba(255, 255, 255, 0.572235) 36.22%, rgba(255, 255, 255, 0) 65.79%);
+    
+    /* background: linear-gradient(182.6deg, #FFFFFF 3.35%, rgba(255, 255, 255, 0.572235) 36.22%, rgba(255, 255, 255, 0) 65.79%); */
   }
 
   &__bottom {
-    
+    position: relative;
+    &::before {
+/*       content: '';
+      background: linear-gradient(2.4deg, #000000 12.72%, rgba(0, 0, 0, 0.633721) 44.36%, rgba(0, 0, 0, 0) 70.61%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 2; */
+    }
   }
 
   &__descr {
+    font-family:$fontFamilySecond;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    color: #FFFFFF;
+    margin-bottom: 30px;
   }
 
   &__subdescr {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 19px;
+    color: #DEDEDE;
+    margin-bottom: 15px;
   }
 }
 
@@ -52,7 +122,7 @@
   align-items: stretch;
   flex-wrap: wrap;
   row-gap: 40px;
-  margin-bottom: 50px;
+  margin-bottom: 250px;
   &__item {
     display: flex;
     flex-direction: column;
@@ -75,7 +145,11 @@
   }
 }
 .author {
-
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
   &__link {
+    text-decoration-line: underline;
+    color: inherit;
   }
 }
