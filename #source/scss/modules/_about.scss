@@ -25,6 +25,9 @@
       z-index: -1;
       width: 100%;
       height: 17%;
+      @media (min-width: 768px) {
+        height: 100%;
+      }
     }
   }
   &::after{
@@ -48,6 +51,13 @@
     transform: rotate(3.3deg);
     width: 568.71px;
     height: 231.7px;
+    @media (min-width: 768px) {
+      background-image: url('../../img/about/airplane-768.png');
+      width: 802.81px;
+      height: 327.07px;
+      bottom: 30%;
+      left: 26%;
+    }
   }
   &__tittle {
     margin-bottom: 26px;
@@ -70,22 +80,9 @@
   }
 
   &__data {
-    
-    /* background: linear-gradient(182.6deg, #FFFFFF 3.35%, rgba(255, 255, 255, 0.572235) 36.22%, rgba(255, 255, 255, 0) 65.79%); */
   }
 
   &__bottom {
-    position: relative;
-    &::before {
-/*       content: '';
-      background: linear-gradient(2.4deg, #000000 12.72%, rgba(0, 0, 0, 0.633721) 44.36%, rgba(0, 0, 0, 0) 70.61%);
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 2; */
-    }
   }
 
   &__descr {
@@ -121,14 +118,21 @@
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
-  row-gap: 40px;
+  //row-gap: 40px;
   margin-bottom: 250px;
+  @media (min-width: 768px) {
+    margin-bottom: 40%;
+  }
   &__item {
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
     flex-shrink: 0;
     word-break: break-word;
+    @media (min-width: 768px) {
+      flex-basis: 25%;
+      
+    }
   }
 
   &__category {
