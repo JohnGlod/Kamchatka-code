@@ -45,18 +45,18 @@
     bottom: 27%;
     left: 9%;
     position: absolute;
-    background-image: url('../../img/about/airplane.png');
+    background-image: url('../../img/about/airplane-full.png');
     background-repeat: no-repeat;
     z-index: 1;
     transform: rotate(3.3deg);
     width: 568.71px;
     height: 231.7px;
     @media (min-width: 768px) {
-      background-image: url('../../img/about/airplane-768.png');
+      //background-image: url('../../img/about/airplane-768.png');
       width: 802.81px;
       height: 327.07px;
-      bottom: 30%;
-      left: 26%;
+      bottom: 20%;
+      left: 45%;
     }
   }
   &__tittle {
@@ -118,7 +118,7 @@
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
-  //row-gap: 40px;
+  row-gap: 40px;
   margin-bottom: 250px;
   @media (min-width: 768px) {
     margin-bottom: 40%;
@@ -131,10 +131,27 @@
     word-break: break-word;
     @media (min-width: 768px) {
       flex-basis: 25%;
-      
+
     }
   }
-
+  &__logo {
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    &--complexity {
+      background-image: url('../../img/sprite/level.svg');
+    }
+    &--period {
+      background-image: url('../../img/sprite/wall-clock.svg');
+    }
+    &--duration {
+      background-image: url('../../img/sprite/calendar.svg');
+    }
+    &--hotel {
+      background-image: url('../../img/sprite/hotels.svg');
+    }
+  }
   &__category {
     font-family: $fontFamilySecond;
     font-size: 14px;

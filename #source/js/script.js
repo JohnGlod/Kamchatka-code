@@ -16,8 +16,11 @@ if (iconMenu) {
 
 let Main = new Swiper( firstSlider, 
   {
+  autoplay: {
+      delay: 3000,
+  },
 	centeredSlides: false,
-	loop: true, 
+	loop: false, 
 	autoHeight: false,
 	slidesPerView: 'auto',
 	grabCursor: true,
@@ -26,4 +29,5 @@ let Main = new Swiper( firstSlider,
     nextEl: '.button-next',
     prevEl: '.button-prev',
   },
+  progressMultipler : 1,
 });
