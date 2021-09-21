@@ -1,0 +1,49 @@
+.first-slider {
+  width: 730px;
+  margin: 30px 15px;
+  padding: 10px 0;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    position: absolute;
+    bottom: 15%;
+    right: 0;
+  }
+  &__item {
+    position: relative;
+  }
+  &__caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20%;
+    font-family: $fontFamilyMain;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 171%;
+    opacity: 0.7;
+  }
+
+  &__navigation {
+    display: flex;
+    flex-basis: 100px;
+    gap: 16px;
+  }
+}
+
+.swiper-wrapper {
+  padding: 20px 0;
+}
+.swiper-slide {
+  width: 210px;
+  height: 210px;
+  filter: contrast(130%) grayscale(50%);
+}
+.swiper-slide-active {
+  transform: scale(1.20); // увеличение на 20%
+  filter: none;
+  transition: all .2s ease;
+}
+.swiper-slide .first-slider__item  {
+  transform: scale(1); // уменьшить неактивный слайд
+  transition: transform .2s ease;
+}
