@@ -46,31 +46,49 @@
             content: "";
             width: 15px;
             height: 15px;
-            background-image: url(../../img/sprite/right-arrow.svg);
+            background-image: url('../../img/sprite/right-arrow.svg');
             background-repeat: no-repeat;
             position: absolute;
             top: 10px;
             left: 10px;
         }
     }
+    &-accent {
+        border-radius: 5px;
+        color: inherit;
+        cursor: pointer;
+    }
 }
 
 .social {
     display: flex;
-    gap: 25px;
+    
     &__links {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         &--fb {
-            background-image: url(../../img/sprite/Facebook.svg);
+            background-image: url('../../img/sprite/Facebook.svg');
             width: 18px;
             height: 20px;
+            &-lite {
+                background-image: url('../../img/sprite/fb-lite.svg');
+            }
         }
         &--inst {
-            background-image: url(../../img/sprite/inst.svg);
+            background-image: url('../../img/sprite/inst.svg');
             width: 20px;
             height: 20px;
+            &-lite {
+                background-image: url('../../img/sprite/inst-lite.svg');
+            }
+        }
+        &--vk {
+            width: 24px;
+            height: 24px;
+            &-lite {
+                background-image: url('../../img/sprite/vk.svg');
+            }
         }
     }
 }

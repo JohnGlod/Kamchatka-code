@@ -1,9 +1,154 @@
+
 .footer {
   background-color: #212121;
   padding: 60px 0;
   color: #fff;
+
+  &__content {
+  }
+
+  &__nav {
+  }
+
+  &__logo {
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    margin-bottom: 50px;
+  }
+
+  &__gallery {
+    margin-bottom: 50px;
+  }
+
+  &__links {
+    margin-bottom: 50px;
+  }
+
+  &__contacts {
+    margin-bottom: 50px;
+  }
+
+  &__bottom {
+  }
 }
 
-.menu-list {
-  
+
+.list {
+  font-size: 16px;
+  line-height: 150%;
+  > li:not(:last-child){
+    margin-bottom: 16px;
+  }
+
+  &-item {
+    &__link {
+      color: var(--color-gray);
+    }
+  } 
+}
+
+.gallery {
+
+  &__top {
+    display: flex;
+    margin-bottom: 16px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__tittle {
+    font-family: $fontFamilySecond;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 200%;
+    color: var(--color-gray);
+    a {
+      color: inherit;
+    }
+  }
+  &-list {
+    display: grid;
+    gap: 7px;
+    grid-template: 1fr / repeat(3,91px);
+    grid-auto-flow: row;
+    &__item {
+      width: 91px;
+      height: 97px;
+      // нужен ли тут хавер? 
+      &:hover{
+        transform: scale(1.5);
+        transition: transform .2 ease-out;
+      }
+    }
+  }
+
+  &__btn {
+    font-size: 14px;
+    line-height: 171%;
+    padding: 10px 21px 10px 29px;
+    border: 1px solid #fff;
+    & > a {
+      color: var(--color-gray);
+    }
+    
+  }
+}
+
+.news {
+
+  &__img {
+    position: relative;
+    &::after{
+      content: '';
+    }
+    &::before{
+      content: '';
+    }
+  }
+
+  &__tittle {
+  }
+
+  &__subtittle {
+    color: var(--color-gray);
+  }
+}
+.social {
+
+  &__links {
+  }
+
+  &__links--fb {
+  }
+
+  &__links--fb-lite {
+  }
+
+  &__links--inst {
+  }
+
+  &__links--inst-lite {
+  }
+
+  &__links--vk {
+  }
+
+  &__links--vk-lite {
+  }
+}
+.contacts {
+
+  &__tel {
+  }
+
+  &__descr {
+  }
+
+  &__email {
+  }
+
+  &__local-address {
+  }
 }
