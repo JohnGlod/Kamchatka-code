@@ -1,10 +1,11 @@
 
 .footer {
   background-color: #212121;
-  padding: 60px 0;
+  padding-top: 60px;
   color: #fff;
 
   &__content {
+    border-bottom: 1px solid #363636;
   }
 
   &__nav {
@@ -24,13 +25,17 @@
 
   &__links {
     margin-bottom: 50px;
+    
   }
-
+  &__social {
+    gap: 16px;
+  }
   &__contacts {
     margin-bottom: 50px;
   }
 
   &__bottom {
+    padding: 20px 0;
   }
 }
 
@@ -97,58 +102,99 @@
 }
 
 .news {
-
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 150%;
+  padding-bottom: 50px;
+  gap: 18px;
+  cursor: pointer;
   &__img {
     position: relative;
+    flex-basis: 65px;
+    height: 102px;
+    flex-shrink: 0;
+    
     &::after{
       content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 8.22px;
+      height: 11.25px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-image: url('../../img/sprite/play.svg');
+      z-index: 3;
     }
     &::before{
       content: '';
+      position: absolute;
+      width: 32.9px;
+      height: 32.9px;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      z-index: 3;
     }
   }
+  &__text {
 
+  }
   &__tittle {
+    font-family: $fontFamilySecond;
+    font-weight: 600;
+    margin-bottom: 10px;
   }
 
   &__subtittle {
     color: var(--color-gray);
   }
 }
-.social {
 
-  &__links {
-  }
-
-  &__links--fb {
-  }
-
-  &__links--fb-lite {
-  }
-
-  &__links--inst {
-  }
-
-  &__links--inst-lite {
-  }
-
-  &__links--vk {
-  }
-
-  &__links--vk-lite {
-  }
-}
 .contacts {
+  display: flex;
+  flex-direction: column;
 
   &__tel {
+    color: inherit;
+    margin-bottom: 12px;
+    font-family: $fontFamilySecond;
+    font-weight: bold;
+    font-style: normal;
+font-size: 20px;
+line-height: 32px;
+/* identical to box height, or 160% */
   }
 
   &__descr {
+    font-family: $fontFamilySecond;
+    color: var(--color-gray);
+    margin-bottom: 35px;
+    font-size: 14px;
+line-height: 32px;
+/* identical to box height, or 229% */
+
+
   }
 
   &__email {
+    color: inherit;
+    margin-bottom: 12px;
+    font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
   }
 
   &__local-address {
+    font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
   }
 }

@@ -62,10 +62,9 @@
 
 .social {
     display: flex;
-    
     &__links {
+        cursor: pointer;
         background-repeat: no-repeat;
-        background-size: cover;
         background-position: center;
         &--fb {
             background-image: url('../../img/sprite/Facebook.svg');
