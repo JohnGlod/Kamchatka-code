@@ -72,7 +72,6 @@
   }
 
   &__text {
-    font-size: 16px;
     line-height:  150%;
     color: #313131;
     opacity: 0.8;
@@ -96,7 +95,6 @@
 
   &__subdescr {
     font-style: italic;
-    font-size: 16px;
     line-height: 19px;
     color: #DEDEDE;
     margin-bottom: 15px;
@@ -167,7 +165,6 @@
 }
 .author {
   font-weight: 500;
-  font-size: 16px;
   color: #FFFFFF;
   &__link {
     text-decoration-line: underline;

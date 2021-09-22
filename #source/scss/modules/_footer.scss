@@ -6,9 +6,27 @@
 
   &__content {
     border-bottom: 1px solid #363636;
+    @media (min-width: 768px) {
+      flex-basis: 100%;
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    @media (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__nav {
+    margin-bottom: 50px;
+    @media (min-width: 1200px) {
+      flex-basis: 250px;
+    }
+    @media (min-width: 768px) {
+      border-right: 1px solid #363636;
+      padding-right: 40px;
+    }
+    
   }
 
   &__logo {
@@ -21,27 +39,44 @@
 
   &__gallery {
     margin-bottom: 50px;
+    @media (min-width: 1200px) {
+      padding-right: 40px;
+    }
+    @media (min-width: 768px) {
+      border-right: 1px solid #363636;
+    }
+  
   }
 
   &__links {
     margin-bottom: 50px;
-    
+    @media (min-width: 1200px) {
+    }
+    @media (min-width: 768px) {
+      border-right: 1px solid #363636;
+    }
   }
   &__social {
     gap: 16px;
   }
   &__contacts {
     margin-bottom: 50px;
+
+    @media (min-width: 1200px) {
+      flex-basis: 250px;
+    }
+  
   }
 
   &__bottom {
     padding: 20px 0;
+    font-size: 14px;
+    font-feature-settings: 'tnum' on, 'lnum' on;
   }
 }
 
 
 .list {
-  font-size: 16px;
   line-height: 150%;
   > li:not(:last-child){
     margin-bottom: 16px;
@@ -82,7 +117,7 @@
       width: 91px;
       height: 97px;
       // нужен ли тут хавер? 
-      &:hover{
+      &:hover, :focus{
         transform: scale(1.5);
         transition: transform .2 ease-out;
       }
@@ -97,29 +132,36 @@
     & > a {
       color: var(--color-gray);
     }
-    
+    &:hover {
+      color: #363636;
+    }
   }
 }
 
 .news {
   display: flex;
-  justify-content: space-between;
-  font-size: 16px;
+  justify-content: space-around;
+  width: 308px;
   line-height: 150%;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   gap: 18px;
   cursor: pointer;
+
   &__img {
+    background-image: url('../../img/footer/review.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     position: relative;
-    flex-basis: 65px;
     height: 102px;
-    flex-shrink: 0;
-    
+    width: 65px;
+    border-radius: 8px;
     &::after{
       content: '';
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      left: 50%;
       width: 8.22px;
       height: 11.25px;
       background-position: center;
@@ -128,20 +170,26 @@
       background-image: url('../../img/sprite/play.svg');
       z-index: 3;
     }
-    &::before{
+
+    &::before{ // круг
       content: '';
       position: absolute;
-      width: 32.9px;
-      height: 32.9px;
-      top: 0;
-      left: 0;
+      width: 32px;
+      height: 32px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      left: 50%;
       border-radius: 50%;
       border: 1px solid #fff;
       z-index: 3;
+      background-color: inherit;
     }
-  }
-  &__text {
 
+  }
+
+  &__text {
+    width: 227px;
+    
   }
   &__tittle {
     font-family: $fontFamilySecond;
@@ -157,44 +205,65 @@
 .contacts {
   display: flex;
   flex-direction: column;
-
+  font-style: normal;
+  &__top {
+    font-family: $fontFamilySecond;
+    margin-bottom: 35px;
+  }
+  &__bottom {
+    padding: 0 16px;
+  }
   &__tel {
     color: inherit;
     margin-bottom: 12px;
-    font-family: $fontFamilySecond;
-    font-weight: bold;
-    font-style: normal;
-font-size: 20px;
-line-height: 32px;
-/* identical to box height, or 160% */
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 160%;
   }
 
   &__descr {
-    font-family: $fontFamilySecond;
     color: var(--color-gray);
-    margin-bottom: 35px;
     font-size: 14px;
-line-height: 32px;
-/* identical to box height, or 229% */
-
-
+    line-height: 229%;
+    display: block;
   }
 
   &__email {
     color: inherit;
     margin-bottom: 12px;
-    font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-
+    line-height: 150%;
+    display: block;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: -20px;
+    
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url('../../img/sprite/email.svg');
+      width: 16px;
+      height: 16px;
+      display: block;
+    }
   }
 
   &__local-address {
-    font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-
-
+    line-height:  150%;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 5px;
+      left: -22px;
+      fill: #fff;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: url('../../img/sprite/place-localizer.svg');
+      width: 18px;
+      height: 18px;
+      display: block;
+    }
   }
 }

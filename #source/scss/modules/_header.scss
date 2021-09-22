@@ -6,9 +6,6 @@
   @media (min-width: 768px) {
     display: none;
   }
-  @media (min-width: 1440px) {
-    
-  }
   &__container {
     min-height: 38px;
     padding-top: 20px;
@@ -79,7 +76,7 @@
     gap: 56px;
     flex-direction: column;
     align-items: center;
-  
+
   }
 
   &__link {
@@ -101,7 +98,9 @@
 		height: 18px;
 		cursor: pointer;
     z-index: 15;
-
+    @media (min-width: 1440px) {
+      display: none;
+    }
 		span{
 			transition: all 0.3s ease 0s;
 			top: calc(50% - 1px);
