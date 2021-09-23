@@ -9,18 +9,19 @@
     @media (min-width: 768px) {
       flex-basis: 100%;
       display: flex;
-      gap: 40px;
       flex-wrap: wrap;
       justify-content: space-between;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
       flex-wrap: nowrap;
+      gap: 40px;
+      justify-content: start;
     }
   }
 
   &__nav {
     margin-bottom: 50px;
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
       flex-basis: 250px;
     }
     @media (min-width: 768px) {
@@ -40,7 +41,7 @@
 
   &__gallery {
     margin-bottom: 50px;
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
       padding-right: 40px;
     }
     @media (min-width: 768px) {
@@ -51,7 +52,7 @@
 
   &__links {
     margin-bottom: 50px;
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
     }
     @media (min-width: 768px) {
       border-right: 1px solid #363636;
@@ -63,7 +64,7 @@
   &__contacts {
     margin-bottom: 50px;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 992px) {
       flex-basis: 250px;
     }
   
@@ -154,6 +155,7 @@
     height: 102px;
     width: 65px;
     border-radius: 8px;
+    flex-shrink: 0;
     &::after{
       content: '';
       position: absolute;
