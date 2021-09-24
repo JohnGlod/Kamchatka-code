@@ -138,17 +138,18 @@
     background-position: center;
     background-repeat: no-repeat;
     &--complexity {
-      background-image: url('../../img/sprite/level.svg');
+      background-image: url('../../img/icons/level.svg');
     }
     &--period {
-      background-image: url('../../img/sprite/wall-clock.svg');
+      background-image: url('../../img/icons/wall-clock.svg');
     }
     &--duration {
-      background-image: url('../../img/sprite/calendar.svg');
+      background-image: url('../../img/icons/calendar.svg');
     }
     &--hotel {
-      background-image: url('../../img/sprite/hotels.svg');
+      background-image: url('../../img/icons/hotels.svg');
     }
+
   }
   &__category {
     font-family: $fontFamilySecond;

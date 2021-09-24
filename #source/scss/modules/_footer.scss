@@ -167,7 +167,7 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      background-image: url('../../img/sprite/play.svg');
+      background-image: url('../../img/icons/play.svg');
       z-index: 3;
     }
 
@@ -242,7 +242,7 @@
     
       background-repeat: no-repeat;
       background-position: center;
-      background-image: url('../../img/sprite/email.svg');
+      background-image: url('../../img/icons/email.svg');
       width: 16px;
       height: 16px;
       display: block;
@@ -257,13 +257,13 @@
       position: absolute;
       top: 5px;
       left: -22px;
-      fill: #fff;
       background-repeat: no-repeat;
       background-position: center;
-      background-image: url('../../img/sprite/place-localizer.svg');
+      background-image: url('../../img/icons/place-localizer.svg');
       width: 18px;
       height: 18px;
       display: block;
+      filter: $iconsFilterWhite;
     }
   }
 }

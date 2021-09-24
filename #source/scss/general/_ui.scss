@@ -41,6 +41,12 @@
   background-color: inherit;
   cursor: pointer;
   position: relative;
+  @media (min-width: 768px) {
+    &:hover {
+      transition: opacity .8 ease-out;
+      opacity: .5;
+    }
+  }
   &-prev {
     &::after {
       content: "";
@@ -75,10 +81,19 @@
 
 .social {
   display: flex;
+  align-items: center;
   &__links {
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center;
+    
+    @media (min-width: 768px) {
+      &:hover {
+        filter: $iconsFilterSecondary;
+        transition: filter .8 ease-out;
+      }
+    }
+
     &--fb {
       background-image: url("../../img/sprite/Facebook.svg");
       width: 18px;
