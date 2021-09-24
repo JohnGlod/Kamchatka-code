@@ -1,3 +1,15 @@
+// ====== overall =========// 
+
+.slider-navigation {
+    display: flex;
+    flex-basis: 100px;
+    gap: 16px;
+}
+.swiper-wrapper {
+  padding-bottom: 70px;
+}
+
+// ================ first-slider============== //
 .first-slider {
   width: 730px;
   margin: 30px 15px;
@@ -24,21 +36,19 @@
   }
 
   &__navigation {
-    display: flex;
-    flex-basis: 100px;
-    gap: 16px;
+    filter: $iconsFilterWhite ;
   }
 }
 
-.first-slider > .swiper-wrapper {
-  padding: 20px 0;
+.first-slider .swiper-wrapper {
+  padding: 32px 0; //20
 }
-.first-slider > .swiper-slide {
+.first-slider .swiper-slide {
   width: 210px;
   height: 210px;
   filter: contrast(130%) grayscale(50%);
 }
-.first-slider > .swiper-slide-active {
+.first-slider .swiper-slide-active {
   transform: scale(1.20); // увеличение на 20%
   filter: none;
   transition: all .2s ease;
@@ -49,13 +59,27 @@
 }
 //================== team-slider ======================= // 
 .team-slider {
-
+  position: relative;
   &__item {
   }
 
   &__img {
+    margin-bottom: 24px;
   }
 
   &__name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height:  133% ;
+    color: #000000;
+  }
+  &__navigation {
+    position: absolute;
+    display: flex;
+    flex-basis: 100px;
+    gap: 16px;
+    bottom: 0px;
+    left: 0;
+    filter: $iconsFilterBlack ;
   }
 }

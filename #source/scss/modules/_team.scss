@@ -1,11 +1,25 @@
 .team {
-
   &__content {
+    height: 100%;
+    padding: 50px 0;
   }
 
   &__tittle {
+    margin-bottom: 24px;
+    @media (min-width: 768px) {
+      max-width: 45%;
+    }
   }
 
   &__text {
+    display: none;
+    @media (min-width: 992px) {
+      display: block;
+      max-width: 35%;
+      line-height: 150% ;
+      color: #313131;
+      opacity: 0.8;
+      margin-bottom: 80px;
+    }
   }
 }

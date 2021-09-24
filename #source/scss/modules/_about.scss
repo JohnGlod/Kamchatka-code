@@ -101,16 +101,7 @@
   }
 }
 
-.section {
 
-  &__tittle {
-    font-family: $fontFamilySecond;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 125%;
-    color: var(--color-black);
-  }
-}
 .data {
   display: flex;
   justify-content: space-between;
