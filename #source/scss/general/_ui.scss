@@ -86,7 +86,7 @@
     cursor: pointer;
     background-repeat: no-repeat;
     background-position: center;
-    
+
     @media (min-width: 768px) {
       &:hover {
         filter: $iconsFilterSecondary;
@@ -118,4 +118,8 @@
       }
     }
   }
+}
+
+.accent {
+  color: var(--color-secondary);
 }

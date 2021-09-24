@@ -30,15 +30,15 @@
   }
 }
 
-.swiper-wrapper {
+.first-slider > .swiper-wrapper {
   padding: 20px 0;
 }
-.swiper-slide {
+.first-slider > .swiper-slide {
   width: 210px;
   height: 210px;
   filter: contrast(130%) grayscale(50%);
 }
-.swiper-slide-active {
+.first-slider > .swiper-slide-active {
   transform: scale(1.20); // увеличение на 20%
   filter: none;
   transition: all .2s ease;
@@ -46,4 +46,16 @@
 .swiper-slide .first-slider__item  {
   transform: scale(1); // уменьшить неактивный слайд
   transition: transform .2s ease;
+}
+//================== team-slider ======================= // 
+.team-slider {
+
+  &__item {
+  }
+
+  &__img {
+  }
+
+  &__name {
+  }
 }
