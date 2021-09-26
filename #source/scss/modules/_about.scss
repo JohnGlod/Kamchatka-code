@@ -1,5 +1,5 @@
 .about {
-  padding: 50px 0;
+  padding: 120px 0;
   position: relative;
   &__bg {
     position: relative;
@@ -8,13 +8,21 @@
       top: 49%;
       right: 0;
       position: absolute;
-      background-image: url('../../img/about/about-bg.jpg');
+      background-image: url('../../img/about/bg.jpg');
       width: 100%;
       height: 50%;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      z-index: -2;
+      z-index: -7;
+      @media (min-width: 768px) {
+        content: none;
+      }
+      @media (min-width: 992px) {
+        content: '';
+        height: 100%;
+        top: 25%;
+      }
     }
     &::before{
       content: '';
@@ -22,11 +30,16 @@
       right: 0;
       position: absolute;
       background: linear-gradient(182.6deg, #FFFFFF 3.35%, rgba(255, 255, 255, 0.572235) 36.22%, rgba(255, 255, 255, 0) 65.79%);
-      z-index: -1;
+      z-index: -5;
       width: 100%;
       height: 17%;
       @media (min-width: 768px) {
         height: 100%;
+      }
+      @media (min-width: 992px) {
+        //content: none;
+        height: 200px;
+        top: 25%;
       }
     }
   }
@@ -42,22 +55,28 @@
   }
   &::before{
     content: '';
-    bottom: 27%;
-    left: 9%;
+    bottom: 27%; // 27
+    left: 9%; // 9 
     position: absolute;
-    background-image: url('../../img/about/airplane-full.png');
+    //background-image: url('../../img/about/airplane-full.png'); 
+    background-image: url('../../img/about/airplane.png');
     background-repeat: no-repeat;
     z-index: 1;
     transform: rotate(3.3deg);
     width: 568.71px;
     height: 231.7px;
+    transform: scale(0.8);
     @media (min-width: 768px) {
-      //background-image: url('../../img/about/airplane-768.png');
+      transform: scale(1);
       width: 802.81px;
       height: 327.07px;
-      bottom: 20%;
-      left: 45%;
+      bottom: 35%;
+      left: 25%;
     }
+    @media (min-width: 992px) {
+      left: 65%;
+    }
+
   }
   &__tittle {
     margin-bottom: 26px;
@@ -91,6 +110,7 @@
     line-height: 160%;
     color: #FFFFFF;
     margin-bottom: 30px;
+    max-width: 660px; // 45
   }
 
   &__subdescr {
@@ -98,6 +118,7 @@
     line-height: 19px;
     color: #DEDEDE;
     margin-bottom: 15px;
+    max-width: 290px; // 27
   }
 }
 
