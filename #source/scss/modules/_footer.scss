@@ -100,7 +100,7 @@
     align-items: center;
   }
 
-  &__tittle {
+  &__title {
     font-family: $fontFamilySecond;
     font-weight: 700;
     font-size: 14px;
@@ -191,13 +191,13 @@
     max-width: 60%;
     
   }
-  &__tittle {
+  &__title {
     font-family: $fontFamilySecond;
     font-weight: 600;
     margin-bottom: 10px;
   }
 
-  &__subtittle {
+  &__subtitle {
     color: var(--color-gray);
   }
 }

@@ -1,0 +1,87 @@
+.week {
+  &__title {
+    font-family: $fontFamilySecond;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    margin-bottom: 24px;
+    @media (min-width: 768px) {
+      font-size: 40px;
+      line-height: 125%;
+    }
+
+    &--white {
+      color: #fff;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 150%;
+    color: #acacac;
+    &--white {
+      color: #fff;
+    }
+  }
+  &__link {
+    color: inherit;
+    text-decoration: underline;
+  }
+}
+
+.first-day {
+  position: relative;
+  background-image: url('../../img/week/first-day-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background: linear-gradient(
+      180deg,
+      #000000 7.21%,
+      rgba(0, 0, 0, 0.31) 68.74%,
+      rgba(0, 0, 0, 0) 100%
+    );
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    width: 100%;
+    height: 50%;
+  }
+  &::after {
+    position: absolute;
+    bottom:  0;
+    left: 0;
+    content: '';
+    background-image: url('../../img/week/cloud-bg.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+  }
+  &__content {
+  }
+
+  &__title {
+  }
+
+  &__text {
+    
+    max-width: 460px;
+    p:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__slider {
+  }
+
+  &__item {
+  }
+
+  &__navigation {
+  }
+}

@@ -8,18 +8,29 @@
 .swiper-wrapper {
   padding-bottom: 70px;
 }
+.slider-title {
 
+}
+.slider-subtitle {
+
+}
 // ================ first-slider============== //
 .first-slider {
   width: 730px;
   margin: 30px 15px;
   padding: 10px 0;
-
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (min-height: 768px) {
     margin: 0;
     position: absolute;
-    bottom: 10%;
+    bottom: 0;
     right: 0;
+  }
+  @media (min-width: 1200px) {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    bottom: 10%;
   }
   &__item {
     position: relative;

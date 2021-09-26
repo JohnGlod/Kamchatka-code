@@ -63,7 +63,7 @@
     @media (min-width: 768px) {
       font-size: 20px;
       line-height: 140%;
-      width: 50%;
+      max-width: 380px;
     }
   }
 
@@ -83,6 +83,10 @@
     bottom: 4%;
     right: 25px;
     gap: 25px;
+    @media (min-width: 992px) {
+      right: auto;
+      bottom: 12vh;
+    }
   }
 }
 .schedule {
