@@ -9,14 +9,16 @@
     position: absolute;
     bottom: 5px;
     left: 0;
+    z-index: 5;
   }
   &__wrapper {
     padding-bottom: 70px;
   }
   &__body {
     position: absolute;
-    top: 20%;
-    left: 0;
+    bottom: 8%;
+    left: 10%;
+    z-index: 2;
   } 
   &__title {
     font-weight: 700;
@@ -28,6 +30,20 @@
     line-height: 171%;
     color: #bdbdbd;
   }
+  &--size {
+    .swiper-slide {
+      width: 280px;
+      height: 280px;
+      transform: scale(1);
+      transition: transform 0.2s ease;
+    }
+    .swiper-slide-active {
+      transform: scale(1.2); 
+      transition: all 0.2s ease;
+    }
+  }
+
+
 }
 
 // ================ first-slider============== //
@@ -111,13 +127,13 @@
 //================== arrival-slider ======================= //
 .arrival-slider {
   //position: relative;
-
+  margin: 50px 10px;
   @media (min-width: 1200px) {
     margin: 0;
     position: absolute;
-    bottom: 0;
     right: 0;
-    top: calc((100vh - 400px) * 100%);
+    top: 50%;
+    transform: translateY(-50%);
   }
   &__item {
     position: relative;
@@ -126,7 +142,7 @@
       content: '';
       width: calc(100% - 2 * 8px);
       height: 40%;
-      bottom: 35%;
+      bottom: 10px;
       left: 3%;
       background: linear-gradient(
         179.37deg,
@@ -139,5 +155,6 @@
   }
 
   &__navigation {
+    filter: $iconsFilterWhite ;
   }
 }

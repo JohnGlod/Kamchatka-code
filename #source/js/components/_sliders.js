@@ -35,15 +35,18 @@ const Arrival = new Swiper( arrivalSlider, {
   },
   loop: true,
   slidesPerView: 'auto',
-  spaceBetween: 35,
+  spaceBetween: 30,
   centerSlides: true,
   breakpoints: {
     320: {
+      slidesPerView: 1,
+    },
+    450: {
       slidesPerView: 1.2,
     },
-    767: {
+    640: {
       slidesPerView: 3,
-    },
+    }
   },
   autoHeight: true,
   grabCursor: true,
