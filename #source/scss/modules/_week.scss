@@ -31,12 +31,13 @@
   }
 }
 
-.first-day {
+.arrival {
   position: relative;
-  background-image: url('../../img/week/first-day-bg.jpg');
+  background-image: url('../../img/week/arrival-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
   &::before {
     position: absolute;
     top: 0;
