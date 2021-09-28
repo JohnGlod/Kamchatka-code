@@ -42,11 +42,17 @@ const Arrival = new Swiper( arrivalSlider, {
       slidesPerView: 1,
     },
     450: {
-      slidesPerView: 1.2,
+      slidesPerView: 1.5,
     },
-    640: {
-      slidesPerView: 3,
-    }
+    768: {
+      slidesPerView: 2.5,
+    },
+    // 992: {
+    //   slidesPerView: 3,
+    // },
+    // 1200: {
+    //   slidesPerView: 2.5,
+    // }
   },
   autoHeight: true,
   grabCursor: true,
