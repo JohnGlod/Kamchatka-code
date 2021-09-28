@@ -12,7 +12,7 @@
     z-index: 5;
   }
   &__wrapper {
-    //padding-bottom: 70px;
+    padding-bottom: 80px;
   }
   &__body {
     position: absolute;
@@ -129,8 +129,8 @@
 //================== arrival-slider ======================= //
 .arrival-slider {
   //position: relative;
-  margin: 50px 10px;
-  padding-bottom: 80px;
+  margin: 50px 25px;
+  
   @media (min-width: 1200px) {
     margin: 0;
     position: absolute;

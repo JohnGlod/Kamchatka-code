@@ -140,3 +140,68 @@
 		&__text {
 		}
 }
+//================== second-day ===============//
+
+.second-day {
+  position: relative;
+  padding: 50px 0;
+ /*  &::after {
+    position: absolute;
+    top: 50%;
+    right: -17%;
+    content: '';
+    background-image: url('../../img/week/vilyuchinsky.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(-50%);
+
+    width: 591.08px;
+    height: 220.54px;
+    @media (min-width: 992px) {
+      width: 1391px;
+      height: 519px;
+      
+    }
+  }
+   */
+  &__content {
+  }
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: -1;
+  }
+  &__title {
+    @media (min-width: 992px) {
+      max-width: 890px;
+    }
+  }
+
+  &__top {
+    margin-bottom: 180px;
+    @media (min-width: 992px) {
+      max-width: 550px;
+    }
+    @media (min-width: 768px) {
+      max-width: 433px;
+    }
+    p:not(:last-child) {
+      margin-bottom: 38px;
+    }
+  }
+
+  &__text {
+  }
+
+  &__bottom {
+    p:first-child{
+      max-width: 300px
+    }
+    p:not(:last-child) {
+      margin-bottom: 38px;
+    }
+  }
+}
