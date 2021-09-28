@@ -75,7 +75,7 @@ const Team = new Swiper(teamSlider, {
       slidesPerView: 3,
     }
   },
-  autoHeight: true,
+  autoHeight: false,
   grabCursor: true,
   navigation: {
     nextEl: '.team-slider-next',
