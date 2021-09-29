@@ -1,5 +1,6 @@
 const firstSlider = document.querySelector('.first-slider'),
   arrivalSlider = document.querySelector('.arrival-slider'),
+  secondDaySlider = document.querySelector('.second-day-slider'),
   teamSlider = document.querySelector('.team-slider');
 
 const First = new Swiper(firstSlider, {
@@ -47,12 +48,6 @@ const Arrival = new Swiper( arrivalSlider, {
     768: {
       slidesPerView: 2.5,
     },
-    // 992: {
-    //   slidesPerView: 3,
-    // },
-    // 1200: {
-    //   slidesPerView: 2.5,
-    // }
   },
   autoHeight: true,
   grabCursor: true,
@@ -61,6 +56,35 @@ const Arrival = new Swiper( arrivalSlider, {
     prevEl: '.arrival-slider-prev',
   },
 });
+
+const secondDay = new Swiper( secondDaySlider, {
+  autoplay: {
+    delay: 3000,
+  },
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  centerSlides: true,
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2.2,
+    },
+    992: {
+      slidesPerView: 2.5,
+    },
+
+  },
+  autoHeight: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.second-day-slider-next',
+    prevEl: '.second-day-slider-prev',
+  },
+});
+
 
 const Team = new Swiper(teamSlider, {
   autoplay: {

@@ -25,6 +25,10 @@
     &--white {
       color: #fff;
     }
+    &--brown {
+      color: #313131;
+    }
+    
   }
   &__link {
     color: inherit;
@@ -145,34 +149,15 @@
 .second-day {
   position: relative;
   padding: 50px 0;
- /*  &::after {
-    position: absolute;
-    top: 50%;
-    right: -17%;
-    content: '';
-    background-image: url('../../img/week/vilyuchinsky.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: translateY(-50%);
-
-    width: 591.08px;
-    height: 220.54px;
-    @media (min-width: 992px) {
-      width: 1391px;
-      height: 519px;
-      
-    }
-  }
-   */
   &__content {
   }
 
   &__img {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     right: 0;
     z-index: -1;
+    transform: translateY(-50%);
+    top: 38%;
   }
   &__title {
     @media (min-width: 992px) {
@@ -187,21 +172,40 @@
     }
     @media (min-width: 768px) {
       max-width: 433px;
+      margin-bottom: 35px;
     }
     p:not(:last-child) {
       margin-bottom: 38px;
     }
   }
 
-  &__text {
-  }
 
   &__bottom {
+    @media (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 35px;
+    }
+  
     p:first-child{
-      max-width: 300px
+      max-width: 300px;
+      @media (min-width: 1200px) {
+        max-width: inherit;
+      }
     }
     p:not(:last-child) {
       margin-bottom: 38px;
     }
+
   }
+  &__text {
+    @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+    flex: 0 0 480px;
+    }
+  }
+
 }
