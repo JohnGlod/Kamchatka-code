@@ -176,15 +176,10 @@
 
 
 .second-day-slider {
-  margin: 50px 15px;
+  margin-top: 50px;
   @media (min-width: 1200px) {
     margin: 0;
   }
-  /* @media (min-width: 1200px) {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  } */
 
   &__item {
   }
@@ -194,3 +189,20 @@
 }
 
 
+.avachinsky-slider {
+  margin: 50px 25px;
+  @media (min-width: 1200px) {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 37%;
+    transform: translateY(-37%);
+  }
+  @media (min-width: 768px) {
+    margin-inline-start: auto;
+  } 
+
+  &__navigation {
+    filter: $iconsFilterWhite ;
+  }
+}
