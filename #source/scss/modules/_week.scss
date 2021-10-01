@@ -63,10 +63,10 @@
     height: 50%;
   }
   &::after {
-    position: absolute;
-    bottom:  0;
-    left: 0;
     content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
     background-image: url('../../img/week/cloud-bg.png');
     background-repeat: no-repeat;
     width: 100%;
@@ -110,7 +110,7 @@
     right: 0;
     z-index: -1;
     transform: translateY(-50%);
-    top: 38%;
+    top: 40%;
   }
   &__title {
     @media (min-width: 992px) {
@@ -162,6 +162,73 @@
   }
 
 }
+//================== vachkazhets (day-3) ===============//
+
+.vachkazhets {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 0;
+  @media (min-width: 768px ){
+    padding: 50px 0 120px 0;
+  }
+/*   @media (min-width: 1200px ){
+    padding: 50px 0 160px 0;
+  } */
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-image: url('../../img/week/vachkazhets-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 475px;
+  }
+  &::after {
+    @media (min-width: 768px ){
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-image: url('../../img/week/eagle.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 530px;
+      height: 299px;
+    }
+    @media (min-width: 1200px ){
+      right: auto;
+      left: 0;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    }
+  &__content {
+    @media (min-width: 1200px) {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      align-items: center;
+    }
+  }
+
+  &__body {
+    order: 2;
+    flex: 0 0 505px;
+  }
+
+  &__title {
+  }
+
+  &__text {
+    p:not(:last-child) {
+      margin-bottom: 34px;
+    }
+  }
+}
+
 
 //================== avachinsky (day-4) ===============//
 .avachinsky {
@@ -169,6 +236,7 @@
   background: #000000; 
   min-height: 100vh;
   padding: 50px 0 160px 0;
+  //margin-top: -10px;
   @media (min-width: 1200px) {
     padding: 50px 0 240px 0;
   }
@@ -207,10 +275,6 @@
     }
   }
 }
-
-
-/* 
-*/
 
 //================== leaving  (day-8) ===============//
 .leaving {

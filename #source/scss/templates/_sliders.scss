@@ -63,6 +63,7 @@
         transform: matrix(1, 0, 0, -1, 0, 0);
         @media (min-width: 768px) {
           width: calc(300px - 2 * 24px);
+          //width: calc(300px - 2 * 20px);
         } 
       }
     }
@@ -131,27 +132,7 @@
   transform: scale(1); // уменьшить неактивный слайд
   transition: transform 0.2s ease;
 }
-//================== team-slider ======================= //
-.team-slider {
-  position: relative;
-  max-width: 100%;
-  &__item {
-  }
 
-  &__img {
-    margin-bottom: 24px;
-  }
-
-  &__name {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 133%;
-    color: #000000;
-  }
-  &__navigation {
-    filter: $iconsFilterBlack;
-  }
-}
 
 //================== arrival-slider ======================= //
 .arrival-slider {
@@ -174,7 +155,7 @@
   }
 }
 
-
+//================== second-day-slider  ======================= //
 .second-day-slider {
   margin-top: 50px;
   @media (min-width: 1200px) {
@@ -187,10 +168,31 @@
   &__navigation {
   }
 }
+//================== vachkazhets-slider ======================= //
+.vachkazhets-slider {
+  margin-top: 50px;
+  max-height: 350px;
+  @media (min-width: 1200px) {
+    margin: 0;
+  }
 
+  @media (min-width: 768px) {
 
+  }
+  &__item {
+  }
+
+  &__navigation {
+    filter: $iconsFilterWhite;
+    @media (min-width: 1200px ) {
+      filter: none;
+    }
+  }
+}
+
+//================== avachinsky-slider ======================= //
 .avachinsky-slider {
-  margin: 50px 25px;
+  margin-top: 50px;
   @media (min-width: 1200px) {
     margin: 0;
     position: absolute;
@@ -204,5 +206,27 @@
 
   &__navigation {
     filter: $iconsFilterWhite ;
+  }
+}
+
+//================== team-slider ======================= //
+.team-slider {
+  position: relative;
+  max-width: 100%;
+  &__item {
+  }
+
+  &__img {
+    margin-bottom: 24px;
+  }
+
+  &__name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 133%;
+    color: #000000;
+  }
+  &__navigation {
+    filter: $iconsFilterBlack;
   }
 }

@@ -1,7 +1,8 @@
 const firstSlider = document.querySelector('.first-slider'),
   arrivalSlider = document.querySelector('.arrival-slider'),
   secondDaySlider = document.querySelector('.second-day-slider'),
-  avachinskySlider = document.querySelector('.avachinsky-slider'), 
+  avachinskySlider = document.querySelector('.avachinsky-slider'),
+  vachkazhetsSlider = document.querySelector('.vachkazhets-slider'),
   teamSlider = document.querySelector('.team-slider');
 
 const First = new Swiper(firstSlider, {
@@ -83,6 +84,31 @@ const secondDay = new Swiper( secondDaySlider, {
   navigation: {
     nextEl: '.second-day-slider-next',
     prevEl: '.second-day-slider-prev',
+  },
+});
+
+
+const Vachkazhets = new Swiper( vachkazhetsSlider, {
+  autoplay: {
+    delay: 3000,
+  },
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  centerSlides: false,
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2.5,
+    },
+  },
+  autoHeight: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.vachkazhets-slider-next',
+    prevEl: '.vachkazhets-slider-prev',
   },
 });
 
