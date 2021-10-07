@@ -68,7 +68,7 @@ const secondDay = new Swiper( secondDaySlider, {
   spaceBetween: 30,
   centerSlides: true,
   breakpoints: {
-    375: {
+    320: {
       slidesPerView: 1,
     },
     768: {

@@ -110,7 +110,10 @@
     right: 0;
     z-index: -1;
     transform: translateY(-50%);
-    top: 40%;
+    top: 40%; //top: 48%;
+ /*    @media (min-width: 768px) {
+      top: 50%;
+    } */
   }
   &__title {
     @media (min-width: 992px) {
@@ -236,7 +239,6 @@
   background: #000000; 
   min-height: 100vh;
   padding: 50px 0 160px 0;
-  //margin-top: -10px;
   @media (min-width: 1200px) {
     padding: 50px 0 240px 0;
   }
@@ -273,6 +275,62 @@
     p:not(:last-child) {
       margin-bottom: 34px;
     }
+  }
+}
+//================== sea ( day-5,6 ) ===============//
+.sea {
+
+  &__top {
+  }
+
+  &__bottom {
+  }
+}
+
+.sea-trip {
+
+  &__body {
+  }
+
+  &__content {
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+}
+
+.sea-ocean {
+
+  &__body {
+  }
+
+  &__content {
+  }
+
+  &__title {
+  }
+
+  &__text {
+  }
+
+  &__service {
+  }
+}
+
+.service {
+
+  &__name {
+  }
+}
+.service-item {
+
+  &__name {
+  }
+
+  &__text {
   }
 }
 
