@@ -3,6 +3,8 @@ const firstSlider = document.querySelector('.first-slider'),
   secondDaySlider = document.querySelector('.second-day-slider'),
   avachinskySlider = document.querySelector('.avachinsky-slider'),
   vachkazhetsSlider = document.querySelector('.vachkazhets-slider'),
+  seaTripSlider = document.querySelector('.sea-trip-slider'),
+  seaOceanSlider = document.querySelector('.sea-ocean-slider'),
   teamSlider = document.querySelector('.team-slider');
 
 const First = new Swiper(firstSlider, {

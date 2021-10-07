@@ -28,7 +28,6 @@
     &--brown {
       color: #313131;
     }
-    
   }
   &__link {
     color: inherit;
@@ -38,12 +37,13 @@
 //================== arrival (day-1)  ===============//
 .arrival {
   position: relative;
-  background-image: url('../../img/week/arrival-bg.jpg');
+  background-image: url("../../img/week/arrival-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
   padding: 50px 0 160px 0;
+  margin-top: -10px;
   @media (min-width: 1200px) {
     padding: 50px 0 240px 0;
   }
@@ -51,23 +51,18 @@
     position: absolute;
     top: 0;
     left: 0;
-    content: '';
-    background: linear-gradient(
-      180deg,
-      #000000 7.21%,
-      rgba(0, 0, 0, 0.31) 68.74%,
-      rgba(0, 0, 0, 0) 100%
-    );
+    content: "";
+    background: linear-gradient(180deg, #000000 7.21%, rgba(0, 0, 0, 0.31) 68.74%, rgba(0, 0, 0, 0) 100%);
     transform: matrix(-1, 0, 0, 1, 0, 0);
     width: 100%;
     height: 50%;
   }
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -10px;
     left: 0;
-    background-image: url('../../img/week/cloud-bg.png');
+    background-image: url("../../img/week/cloud-bg.png");
     background-repeat: no-repeat;
     width: 100%;
     height: 250px;
@@ -78,7 +73,6 @@
   }
 
   &__title {
-   
   }
 
   &__text {
@@ -110,10 +104,7 @@
     right: 0;
     z-index: -1;
     transform: translateY(-50%);
-    top: 40%; //top: 48%;
- /*    @media (min-width: 768px) {
-      top: 50%;
-    } */
+    top: 40%;
   }
   &__title {
     @media (min-width: 992px) {
@@ -135,7 +126,6 @@
     }
   }
 
-
   &__bottom {
     @media (min-width: 1200px) {
       display: flex;
@@ -143,8 +133,8 @@
       align-items: baseline;
       gap: 35px;
     }
-  
-    p:first-child{
+
+    p:first-child {
       max-width: 300px;
       @media (min-width: 1200px) {
         max-width: inherit;
@@ -153,17 +143,15 @@
     p:not(:last-child) {
       margin-bottom: 38px;
     }
-
   }
   &__text {
     @media (min-width: 1200px) {
-    display: flex;
-    flex-direction: column;
-    order: 2;
-    flex: 0 0 480px;
+      display: flex;
+      flex-direction: column;
+      order: 2;
+      flex: 0 0 480px;
     }
   }
-
 }
 //================== vachkazhets (day-3) ===============//
 
@@ -171,18 +159,18 @@
   position: relative;
   min-height: 100vh;
   padding: 50px 0;
-  @media (min-width: 768px ){
+  @media (min-width: 768px) {
     padding: 50px 0 120px 0;
   }
-/*   @media (min-width: 1200px ){
+  /*   @media (min-width: 1200px ){
     padding: 50px 0 160px 0;
   } */
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     bottom: -10px;
     left: 0;
-    background-image: url('../../img/week/vachkazhets-bg.jpg');
+    background-image: url("../../img/week/vachkazhets-bg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -190,24 +178,24 @@
     height: 475px;
   }
   &::after {
-    @media (min-width: 768px ){
-      content: '';
+    @media (min-width: 768px) {
+      content: "";
       position: absolute;
       bottom: 0;
       right: 0;
-      background-image: url('../../img/week/eagle.png');
+      background-image: url("../../img/week/eagle.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       width: 530px;
       height: 299px;
     }
-    @media (min-width: 1200px ){
+    @media (min-width: 1200px) {
       right: auto;
       left: 0;
       transform: matrix(-1, 0, 0, 1, 0, 0);
     }
-    }
+  }
   &__content {
     @media (min-width: 1200px) {
       display: flex;
@@ -232,11 +220,10 @@
   }
 }
 
-
 //================== avachinsky (day-4) ===============//
 .avachinsky {
   position: relative;
-  background: #000000; 
+  background: #000000;
   min-height: 100vh;
   padding: 50px 0 160px 0;
   @media (min-width: 1200px) {
@@ -245,10 +232,10 @@
 
   &::after {
     position: absolute;
-    bottom:  0;
+    bottom: 0;
     right: 0;
-    content: '';
-    background-image: url('../../img/week/gull.png');
+    content: "";
+    background-image: url("../../img/week/gull.png");
     background-repeat: no-repeat;
     width: 373px;
     height: 315px;
@@ -258,7 +245,6 @@
     }
   }
   &__content {
-
   }
 
   &__title {
@@ -268,7 +254,6 @@
   }
 
   &__text {
-    
     @media (min-width: 1200px) {
       max-width: 461px;
     }
@@ -279,16 +264,39 @@
 }
 //================== sea ( day-5,6 ) ===============//
 .sea {
-
+  position: relative;
+  background-image: url("../../img/week/sea-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 50px 0 160px 0;
+  margin-top: -10px;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-image: url("../../img/week/cloud-bg.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+  }
   &__top {
+    @media (min-width: 1200px) {
+      max-width: 536px;
+      margin-left: auto;
+    }
   }
 
   &__bottom {
+    @media (min-width: 1200px) {
+      max-width: 536px;
+    }
   }
 }
 
 .sea-trip {
-
   &__body {
   }
 
@@ -299,11 +307,13 @@
   }
 
   &__text {
+    p:not(:last-child) {
+      margin-bottom: 34px;
+    }
   }
 }
 
 .sea-ocean {
-
   &__body {
   }
 
@@ -314,6 +324,9 @@
   }
 
   &__text {
+    p:not(:last-child) {
+      margin-bottom: 34px;
+    }
   }
 
   &__service {
@@ -321,22 +334,48 @@
 }
 
 .service {
-
-  &__name {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 0;
+  @media (min-width: 1200px) {
+    max-width: 480px;
   }
+  &__name {
+    font-family: $fontFamilySecond;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    color: #ffffff;
+  }
+  &-item {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 16px;
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__name {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      color: #ffffff;
+    }
+  
+    &__text {
+      font-size: 14px;
+      line-height: 24px;
+      color: var(--color-gray);
+      opacity: 0.7;
+      flex: 0 0 225px;
+    }
 }
-.service-item {
-
-  &__name {
-  }
-
-  &__text {
-  }
 }
 
 //================== leaving  (day-8) ===============//
 .leaving {
-  background-image: url('../../img/week/leaving-bg.jpg');
+  background-image: url("../../img/week/leaving-bg.jpg");
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;
@@ -348,36 +387,35 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    content: '';
-    background: linear-gradient(
-      2.4deg,#000 12.72%,rgba(0,0,0,.633721) 44.36%,rgba(0,0,0,0) 70.61%);
-        width: 100%;
-        height: 65vh;
-      @media (min-width: 992px) {
-        height: 120vh;
-      }
+    content: "";
+    background: linear-gradient(2.4deg, #000 12.72%, rgba(0, 0, 0, 0.633721) 44.36%, rgba(0, 0, 0, 0) 70.61%);
+    width: 100%;
+    height: 65vh;
+    @media (min-width: 992px) {
+      height: 120vh;
     }
+  }
 
-		&__body {
-      padding: 120px 0px 50px 0;
-      position: relative;
-      z-index: 2;
-      @media (min-width: 992px) {
-        padding: 140px 0px 160px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-		}
-    &__content {
-      @media (min-width: 992px) {
-        flex: 0 1 480px;
-      }
+  &__body {
+    padding: 120px 0px 50px 0;
+    position: relative;
+    z-index: 2;
+    @media (min-width: 992px) {
+      padding: 140px 0px 160px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-		&__title {
-      margin-bottom: 24px;
-		}
+  }
+  &__content {
+    @media (min-width: 992px) {
+      flex: 0 1 480px;
+    }
+  }
+  &__title {
+    margin-bottom: 24px;
+  }
 
-		&__text {
-		}
+  &__text {
+  }
 }
