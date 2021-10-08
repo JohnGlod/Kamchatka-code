@@ -72,13 +72,12 @@
   background-size: cover;
   min-height: 100vh;
   padding: 50px 0 160px 0;
-  margin-top: -10px;
   @media (min-width: 1200px) {
     padding: 50px 0 240px 0;
   }
   &::before {
     position: absolute;
-    top: 0;
+    top: -10px;
     left: 0;
     content: "";
     background: linear-gradient(180deg, #000000 7.21%, rgba(0, 0, 0, 0.31) 68.74%, rgba(0, 0, 0, 0) 100%);
@@ -368,6 +367,10 @@
   flex-direction: column;
   gap: 16px;
   padding: 16px 0;
+  color: #ffffff;
+  &--black {
+    color: var(--color-black);
+  }
   @media (min-width: 1200px) {
     max-width: 480px;
   }
@@ -376,11 +379,17 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 140%;
-    color: #ffffff;
   }
   &-item {
-    border-bottom: 1px solid #fff;
     padding-bottom: 16px;
+    border-bottom: 1px solid #fff;
+    &--black {
+      border-bottom: 1px solid var(--color-black);
+      & > p {
+        color: #313131;
+      }
+    }
+
     @media (min-width: 768px) {
       display: flex;
       justify-content: space-between;
@@ -390,7 +399,6 @@
       font-weight: 700;
       font-size: 16px;
       line-height: 150%;
-      color: #ffffff;
     }
   
     &__text {
@@ -405,7 +413,7 @@
 //================== helicopter (day-7) ===============//
 
 .helicopter {
-
+  position: relative;
   &__body {
   }
 
@@ -413,12 +421,45 @@
   }
 
   &__top {
+    margin-bottom: 400px;
+    p:not(:last-child) {
+      margin-bottom: 34px;
+    }
+    @media (min-width: 768px) {
+      max-width: 260px;
+      margin-bottom: 22px;
+    }
+    @media (min-width: 1200px) {
+      max-width: 550px;
+    }
+
   }
 
   &__img {
+    position: absolute;
+    top: 46%;
+    transform: translateY(-50%);
+    right: 0;
+    background-image: url('../../img/week/heli-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 87%;
+    height: 430px;
+    z-index: -1;
+  @media (min-width: 768px) {
+    top: 38%;
+  }
   }
 
   &__bottom {
+    p:not(:last-child) {
+      margin-bottom: 34px;
+    }
+    @media (min-width: 1200px) {
+      :first-child {
+        max-width: 550px;
+      }
+    }
   }
 
   &__service {
