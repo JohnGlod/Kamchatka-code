@@ -1,10 +1,39 @@
 .week {
+  @media (min-width: 1200px) {
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 100px;
+      left: 20px;
+      width: 100%;
+      height: 100%;
+      background-image: url('../../img/icons/track.svg');
+      background-repeat: no-repeat;
+      z-index: 2;
+    }
+  }
   &__title {
     font-family: $fontFamilySecond;
     font-weight: 700;
     font-size: 24px;
     line-height: 133%;
     margin-bottom: 24px;
+    position: relative;
+    @media (min-width: 1200px) {
+      &:before{
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: -50px;
+        background-image: url('../../img/icons/point.svg');
+        background-repeat: no-repeat;
+        width: 36px;
+        height: 36px;
+        z-index: 5;
+      }
+    }
+  
     @media (min-width: 768px) {
       font-size: 40px;
       line-height: 125%;
@@ -373,6 +402,28 @@
     }
 }
 }
+//================== helicopter (day-7) ===============//
+
+.helicopter {
+
+  &__body {
+  }
+
+  &__title {
+  }
+
+  &__top {
+  }
+
+  &__img {
+  }
+
+  &__bottom {
+  }
+
+  &__service {
+  }
+}
 
 //================== leaving  (day-8) ===============//
 .leaving {
@@ -420,3 +471,4 @@
   &__text {
   }
 }
+
