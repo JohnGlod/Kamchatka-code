@@ -208,6 +208,41 @@
     filter: $iconsFilterWhite ;
   }
 }
+//================== sea-trip-slider======================= //
+
+.sea-trip-slider {
+  margin: 50px 25px 0;
+  @media (min-width: 1200px) {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 10%;
+  }
+  &__item {
+  }
+
+  &__navigation {
+    filter: $iconsFilterWhite ;
+  }
+}
+
+//================== sea-ocean-slider ======================= //
+.sea-ocean-slider {
+  margin: 50px 25px 0;
+  @media (min-width: 1200px) {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 56%;
+  }
+  &__item {
+  }
+
+  &__navigation {
+    filter: $iconsFilterWhite ;
+  }
+}
+
 
 //================== team-slider ======================= //
 .team-slider {

@@ -141,6 +141,60 @@ const Avachinsky = new Swiper( avachinskySlider, {
   },
 });
 
+const seaTrip = new Swiper( seaTripSlider, {
+  autoplay: {
+    delay: 3000,
+  },
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  centerSlides: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    450: {
+      slidesPerView: 1.5,
+    },
+    768: {
+      slidesPerView: 2.5,
+    },
+  },
+  autoHeight: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.sea-trip-slider-next',
+    prevEl: '.sea-trip-slider-prev',
+  },
+});
+
+const seaOcean = new Swiper( seaOceanSlider, {
+  autoplay: {
+    delay: 3000,
+  },
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  centerSlides: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    450: {
+      slidesPerView: 1.5,
+    },
+    768: {
+      slidesPerView: 2.5,
+    },
+  },
+  autoHeight: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.sea-ocean-slider-next',
+    prevEl: '.sea-ocean-slider-prev',
+  },
+});
+
 const Team = new Swiper(teamSlider, {
   autoplay: {
     delay: 3000,
