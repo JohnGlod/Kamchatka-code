@@ -1,6 +1,7 @@
 // ====== overall =========//
 .slider {
   max-width: 730px;
+  z-index: 15;
   &__navigation {
     display: flex;
     flex-basis: 100px;
@@ -242,8 +243,23 @@
     filter: $iconsFilterWhite ;
   }
 }
+//================== helicopter-slider ======================= //
+.helicopter-slider {
+  margin: 50px 25px 0;
+  @media (min-width: 1200px) {
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 60%;
+    //bottom: 0%;
+  }
+  &__item {
+  }
 
-
+  &__navigation {
+    filter: $iconsFilterWhite ;
+  }
+}
 //================== team-slider ======================= //
 .team-slider {
   position: relative;

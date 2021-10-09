@@ -5,6 +5,7 @@ const firstSlider = document.querySelector('.first-slider'),
   vachkazhetsSlider = document.querySelector('.vachkazhets-slider'),
   seaTripSlider = document.querySelector('.sea-trip-slider'),
   seaOceanSlider = document.querySelector('.sea-ocean-slider'),
+  helicopterSlider = document.querySelector('.helicopter-slider'),
   teamSlider = document.querySelector('.team-slider');
 
 const First = new Swiper(firstSlider, {
@@ -192,6 +193,34 @@ const seaOcean = new Swiper( seaOceanSlider, {
   navigation: {
     nextEl: '.sea-ocean-slider-next',
     prevEl: '.sea-ocean-slider-prev',
+  },
+});
+
+const Helicopter = new Swiper( helicopterSlider, {
+  autoplay: {
+    delay: 3000,
+  },
+  loop: true,
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+  centerSlides: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2.2,
+    },
+    992: {
+      slidesPerView: 2.5,
+    },
+
+  },
+  autoHeight: true,
+  grabCursor: true,
+  navigation: {
+    nextEl: '.helicopter-slider-next',
+    prevEl: '.helicopter-slider-prev',
   },
 });
 
