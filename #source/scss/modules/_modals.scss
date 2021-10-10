@@ -1,0 +1,73 @@
+.modal {
+  &__inner {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("../../img/modals/modal-1.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 40vh;
+      @media (min-width: 768px) {
+        height: 500px;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12%;
+      left: 0;
+      transform: translateY(30%);
+      background-image: url("../../img/week/cloud-bg.png");
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 200px;
+      @media (min-width: 768px) {
+      
+      }
+    }
+  }
+  &__content {
+    //min-height: 100vh;
+    min-height: 600px;
+    padding: 165px 0;
+  }
+
+  &__close {
+  }
+
+  &__info {
+    padding-top: 200px;
+    color: var(--color-black);
+    font-family: $fontFamilySecond;
+    overflow: hidden;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 130%;
+    font-weight: 700;
+    margin-bottom: 16px;
+    @media (min-width: 768px) {
+      font-size: 40px;
+      line-height: 125%;
+      margin-bottom: 21px;
+    }
+  }
+
+  &__text {
+  }
+
+  &__exit {
+    font-size: 18px;
+    line-height: 133%;
+    text-decoration-line: underline;
+    color: var(--color-black);
+    padding: 21px 40px;
+    display: block;
+  }
+}
