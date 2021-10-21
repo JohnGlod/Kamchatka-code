@@ -68,13 +68,7 @@
   }
 
   &__schedule {
-    color: inherit;
-    font-family: $fontFamilyMain;
-    font-size: 18px;
-    line-height: 133%;
-    padding: 4px 0;
-    border-bottom: 1px solid #ffffff;
-    position: relative;
+
     
   }
 
@@ -91,6 +85,13 @@
 }
 .schedule {
   cursor: pointer;
+  color: inherit;
+  font-family: $fontFamilyMain;
+  font-size: 18px;
+  line-height: 133%;
+  padding: 4px 0;
+  border-bottom: 1px solid #ffffff;
+  position: relative;
   &__btn {
     content: '';
     position: absolute;
