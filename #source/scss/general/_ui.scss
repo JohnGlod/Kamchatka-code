@@ -192,3 +192,49 @@
     }
 }
 }
+
+
+.important {
+  position: relative;
+
+  cursor: pointer;
+  color: inherit;
+  font-family: $fontFamilyMain;
+  font-size: 18px;
+  line-height: 133%;
+  padding: 4px 0;
+  
+  border-bottom: 1px solid #212121;
+  &--white {
+    border-bottom: 1px solid #fff;
+  }
+  &__btn {
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: -50%;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #212121;
+    border-radius: 43.5px;
+    background-color: inherit;
+    &--white {
+      border: 1px solid #fff;
+      &::after {
+        filter: $iconsFilterWhite ;
+      }
+    }
+    &::after {
+      content: '';
+      background-image: url('../../img/icons/right-arrow.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      top: 32%;
+      transform: translateX(-50%) rotate(-45.11deg);
+      left: 50%;
+      position: absolute;
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
