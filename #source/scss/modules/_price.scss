@@ -164,7 +164,7 @@
     display: grid; 
     grid-template-columns: 1.5fr 1.5fr 1fr; 
     grid-template-rows: 1fr 1fr; 
-    gap: 20px 40px; 
+    gap: 20px 100px; 
     grid-template-areas: 
       "price__list price__list price__links"
       "price__include price__offer ."; 
