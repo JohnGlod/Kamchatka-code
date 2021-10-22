@@ -2,18 +2,19 @@
   <div class="container">
     <div class="forms__content">
       <h2 class="forms__title section__title">Онлайн-заявка</h2>
+      <span class="forms__answer"></span>
       <form class="form" action="#" method="post">
         <ul class="form-list">
           <li class="form-list__item">
             <label class="form-list__label" for="name">Имя участника</label>
             <input class="form-list__input" type="text" id="name" name="userName" placeholder="Имя">
           </li>
-          <li class="form-list__item">
+          <li class="form-list__item form-list__item--num">
             <label class="form-list__label" for="numbers">Количество человек</label>
             <input class="form-list__input" type="number" id="numbers"  min="1"  name="numberOfPersons" placeholder="1">
             <div class="number">
-              <button class="number__minus" type="button"></button>
-              <button class="number__plus" type="button"></button>
+              <button class="number__minus" type="button">—</button>
+              <button class="number__plus" type="button">+</button>
             </div>
           </li>
           <li class="form-list__item">
@@ -21,37 +22,56 @@
               <legend class="form-check__title">Тариф</legend>
               <label class="form-check__label" for="tariff">
                 <input class="form-check__input" type="radio" name="tariff" value="default">
-                <div class="form-check__text">Базовый (для камчадал)</div>
-                <div class="form-check__price">79 000 руб</div>
+                <div class="form-check__content">
+                  <div class="form-check__text">Базовый (для камчадал)</div>
+                  <div class="form-check__price">79 000 руб</div>
+                </div>
+
               </label>
-              <label class="form-list__label" for="tariff"> 
+              <label class="form-check__label" for="tariff"> 
                 <input class="form-check__input" type="radio" name="tariff" checked>
-                <div class="form-check__text">Базовый + проживание</div>
-                <div class="form-check__price">99 000 руб</div>
+                <div class="form-check__content">
+                  <div class="form-check__text">Базовый + проживание</div>
+                  <div class="form-check__price">99 000 руб</div>
+                </div>
+                
               </label>
-              <label class="form-list__label" for="tariff">
+              <label class="form-check__label" for="tariff">
                 <input class="form-check__input" type="radio" name="tariff">
-                <div class="form-check__text">Базовый + проживание + долина гейзеров</div>
-                <div class="form-check__price">179 000 руб</div>
+                <div class="form-check__content">
+                  <div class="form-check__text">Базовый + проживание + долина гейзеров</div>
+                  <div class="form-check__price">179 000 руб</div>
+                </div>
               </label>
             </fieldset>
           </li>
 
 
-          <li class="form-list__item">
+          <li class="form-list__item form-list__item--date">
             <label class="form-list__label" for="date">Даты тура</label>
             <input class="form-list__input" type="number" id="date" name="date" placeholder="23.06 - 04.07">
           </li>
 
           <li class="form-list__item">
-            <label for="msg">Комментарий</label>
-            <textarea id="msg" name="user_message" placeholder="Напишите ваш комментарий здесь"></textarea>
+            <label class="form-list__label" for="msg">Комментарий</label>
+            <textarea class="form-list__input" id="msg" name="user_message" placeholder="Напишите ваш комментарий здесь"></textarea>
           </li>
           <li class="form-list__item">
             <button class="form-list__button" type="submit">Отправить заявку</button>
           </li>
         </ul>
       </form>
+      <ul class="forms__social social">
+        <li class="social__links social__links--fb social__links--fb-lite">
+          <a href="#"></a>
+        </li>
+        <li class="social__links social__links--inst social__links--inst-lite">
+          <a href="#"></a>
+        </li>
+        <li class="social__links social__links--vk social__links--vk-lite">
+          <a href="#"></a>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
