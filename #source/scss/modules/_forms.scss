@@ -218,14 +218,11 @@ input[type="number"]:focus {
   &__img {
     transform: translateX(-100px);
     @media (min-width: 768px) {
-      //flex: 1 0 350px;
       transform: scale(1.5) translateX(-50px);
     }
-
   }
 
   &__helps {
-
     color: #fff;
   }
 
@@ -235,20 +232,18 @@ input[type="number"]:focus {
     font-size: 32px;
     line-height: 125%;
     margin-bottom: 10px;
-    @media (min-width: 768px ) {
+    @media (min-width: 768px) {
       font-size: 36px;
       line-height: 133%;
     }
-
   }
 
   &__subtitle {
     display: block;
     margin-bottom: 30px;
-@media (min-width: 768px ) {
-  font-size: 20px;
-}
-
+    @media (min-width: 768px) {
+      font-size: 20px;
+    }
   }
 
   &__inner {
@@ -258,12 +253,9 @@ input[type="number"]:focus {
       gap: 24px;
       align-items: center;
     }
-
   }
-  
 
   &__input {
-
     width: 100%;
     padding: 13px 0;
     font-size: 20px;
@@ -276,11 +268,9 @@ input[type="number"]:focus {
     @media (min-width: 768px) {
       flex: 1 0 63.5417%;
     }
-    
   }
 
   &__btn {
-
     width: 100%;
     background: #f47648;
     border-radius: 5px;
