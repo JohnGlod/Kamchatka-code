@@ -3,15 +3,15 @@
     <div class="forms__content">
       <h2 class="forms__title section__title">Онлайн-заявка</h2>
       <span class="forms__answer"></span>
-      <form class="form" action="#" method="post">
+      <form class="form" action="#" method="post" id="form">
         <ul class="form-list">
           <li class="form-list__item">
             <label class="form-list__label" for="name">Имя участника</label>
-            <input class="form-list__input" type="text" id="name" name="userName" placeholder="Имя">
+            <input class="form-list__input" type="text" id="name" name="userName" placeholder="Имя" required>
           </li>
           <li class="form-list__item form-list__item--num">
             <label class="form-list__label" for="numbers">Количество человек</label>
-            <input data-counter="" class="form-list__input" type="number" id="numbers"  min="1" step="1" name="numberOfPersons" placeholder="1">
+            <input data-counter="" class="form-list__input" type="number" value="1" id="numbers"  min="1" step="1" name="numberOfPersons" placeholder="1" required>
             <div class="number">
               <button class="number__minus" type="button">—</button>
               <button class="number__plus" type="button">+</button>
@@ -49,7 +49,7 @@
 
           <li class="form-list__item form-list__item--date">
             <label class="form-list__label" for="date">Даты тура</label>
-            <input class="form-list__input" type="number" id="date" name="date" placeholder="23.06 - 04.07">
+            <input class="form-list__input" type="date" id="date" name="date" placeholder="23.06 - 04.07" required>
           </li>
 
           <li class="form-list__item">
@@ -79,7 +79,7 @@
         <h3 class="email__title">Что нужно знать отправляясь на  Камчатку?</h3>
         <span class="email__subtitle">Получите памятку туриста просто оставив свой e-mail.</span>
         <label class="email__inner" for="email">
-          <input class="email__input" type="email" name="email" id="email" placeholder="Ваш e-mail">
+          <input class="email__input" form="form" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
           <button class= "email__btn" type="button">Получить</button>
         </label>
       </div>

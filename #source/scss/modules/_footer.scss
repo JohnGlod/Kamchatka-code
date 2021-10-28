@@ -87,6 +87,9 @@
   &-item {
     &__link {
       color: var(--color-gray);
+      &:hover {
+        color: var(--color-secondary);
+      }
     }
   } 
 }
@@ -109,6 +112,11 @@
     a {
       color: inherit;
     }
+    &:hover {
+      color: var(--color-secondary);
+      transition: color .8 ease-out;
+    }
+    
   }
   &-list {
     display: grid;
@@ -136,6 +144,7 @@
     }
     &:hover {
       color: #363636;
+      transition: color .8 ease-out;
     }
   }
 }
@@ -189,16 +198,21 @@
 
   &__text {
     max-width: 60%;
-    
+    &:hover {
+      color: var(--color-secondary);
+      transition: color .8 ease-out;
+    }
   }
   &__title {
     font-family: $fontFamilySecond;
     font-weight: 600;
     margin-bottom: 10px;
+
   }
 
   &__subtitle {
     color: var(--color-gray);
+    transition: color .8 ease-out;
   }
 }
 
@@ -206,12 +220,15 @@
   display: flex;
   flex-direction: column;
   font-style: normal;
+
   &__top {
     font-family: $fontFamilySecond;
     margin-bottom: 35px;
+
   }
   &__bottom {
     padding: 0 16px;
+    
   }
   &__tel {
     color: inherit;
@@ -219,6 +236,10 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 160%;
+    &:hover {
+      color: var(--color-secondary);
+      transition: color .8 ease-out;
+    }
   }
 
   &__descr {
@@ -234,6 +255,11 @@
     line-height: 150%;
     display: block;
     position: relative;
+    &:hover {
+      color: var(--color-secondary);
+      transition: color .8 ease-out;
+    }
+
     &::before {
       content: '';
       position: absolute;
@@ -246,6 +272,7 @@
       width: 16px;
       height: 16px;
       display: block;
+
     }
   }
 

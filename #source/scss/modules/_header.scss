@@ -73,7 +73,10 @@
     font-size: 20px;
     line-height: 32px;
     color: #212121;
-
+    &:hover {
+      border-bottom:2px solid #212121 ;
+      transition: border .8 ease-out;
+    }
   }
 
   &__button {

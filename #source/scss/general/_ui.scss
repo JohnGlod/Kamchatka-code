@@ -18,6 +18,11 @@
   align-items: center;
   gap: 15px;
   flex-shrink: 0;
+  padding: 5px;
+  &:hover {
+    box-shadow: 0 0 3px 3px var(--color-secondary);
+    transition: color .8 ease-out;
+  }
   &__image {
     width: 50px;
     height: 38px;
@@ -96,6 +101,12 @@
     border-radius: 5px;
     color: inherit;
     cursor: pointer;
+    &:hover {
+      background-color: var(--color-secondary);
+      transition: all .8 ease-out;
+      color: #fff;
+      opacity: .8;
+    }
   }
 }
 
@@ -206,6 +217,10 @@
   padding: 4px 0;
   
   border-bottom: 1px solid #212121;
+  &:hover {
+    transition: all .8 ease-out;
+    filter: $iconsFilterSecondary;
+  }
   &--white {
     border-bottom: 1px solid #fff;
   }
@@ -219,10 +234,11 @@
     border: 1px solid #212121;
     border-radius: 43.5px;
     background-color: inherit;
+
     &--white {
       border: 1px solid #fff;
       &::after {
-        filter: $iconsFilterWhite ;
+        filter: $iconsFilterWhite;
       }
     }
     &::after {
@@ -236,6 +252,6 @@
       position: absolute;
       width: 16px;
       height: 16px;
-    }
+  }
   }
 }

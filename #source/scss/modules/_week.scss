@@ -1,5 +1,6 @@
 .week {
-  @media (min-width: 1200px) {
+/*   Выглядит не очень 
+@media (min-width: 1200px) {
     position: relative;
     &::before{
       content: '';
@@ -12,7 +13,8 @@
       background-repeat: no-repeat;
       z-index: 2;
     }
-  }
+  } 
+  */
   &__title {
     font-family: $fontFamilySecond;
     font-weight: 700;
