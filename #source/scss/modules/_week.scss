@@ -227,6 +227,7 @@
   }
 
   &__text {
+    position: relative;
     p:not(:last-child) {
       margin-bottom: 34px;
     }
