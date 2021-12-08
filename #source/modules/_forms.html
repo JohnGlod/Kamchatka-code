@@ -2,16 +2,29 @@
   <div class="container">
     <div class="forms__content">
       <h2 class="forms__title section__title">Онлайн-заявка</h2>
-      <span class="forms__answer"></span>
-      <form class="form" action="#" method="post" id="form">
+      <span class="forms__answer" id="form-answer"></span>
+      <form class="form" id="form" action="server.js">
         <ul class="form-list">
           <li class="form-list__item">
             <label class="form-list__label" for="name">Имя участника</label>
-            <input class="form-list__input" type="text" id="name" name="userName" placeholder="Имя" required>
+            <input class="form-list__input _req" 
+            type="text" 
+            id="name" 
+            name="userName" 
+            placeholder="Имя"
+            >
           </li>
           <li class="form-list__item form-list__item--num">
             <label class="form-list__label" for="numbers">Количество человек</label>
-            <input data-counter="" class="form-list__input" type="number" value="1" id="numbers"  min="1" step="1" name="numberOfPersons" placeholder="1" required>
+            <input 
+            class="form-list__input" 
+            type="number" 
+            id="quantity"  
+            value="1" 
+            min="1" 
+            step="1" 
+            name="numberOfPersons" 
+            placeholder="1">
             <div class="number">
               <button class="number__minus" type="button">—</button>
               <button class="number__plus" type="button">+</button>
@@ -20,41 +33,73 @@
           <li class="form-list__item">
             <fieldset class="form-check">
               <legend class="form-check__title">Тариф</legend>
-              <label class="form-check__label" for="tariff">
-                <input class="form-check__input" type="radio" name="tariff" value="default">
-                <div class="form-check__content">
+              
+              <div class="form-check__item" >
+                <input 
+                class="form-check__input" 
+                type="radio" 
+                name="tariff" 
+                value="basis"
+                id="tariffBasis"
+                >
+                <label class="form-check__label" for="tariffBasis">
                   <div class="form-check__text">Базовый (для камчадал)</div>
                   <div class="form-check__price">79 000 руб</div>
-                </div>
+                </label>
+              </div>
 
-              </label>
-              <label class="form-check__label" for="tariff"> 
-                <input class="form-check__input" type="radio" name="tariff" checked>
-                <div class="form-check__content">
+              <div class="form-check__item" > 
+                <input 
+                class="form-check__input"
+                type="radio"
+                name="tariff"
+                id="tariffStandart"
+                value="standart" 
+                checked
+                >
+                <label class="form-check__label" for="tariffStandart">
                   <div class="form-check__text">Базовый + проживание</div>
                   <div class="form-check__price">99 000 руб</div>
-                </div>
-                
-              </label>
-              <label class="form-check__label" for="tariff">
-                <input class="form-check__input" type="radio" name="tariff">
-                <div class="form-check__content">
+                </label>
+              </div>
+
+              <div class="form-check__item">
+                <input 
+                class="form-check__input" 
+                type="radio"
+                name="tariff"
+                id="tariffPremium"
+                value="premium" 
+                >
+                <label class="form-check__label" for="tariffPremium">
                   <div class="form-check__text">Базовый + проживание + долина гейзеров</div>
                   <div class="form-check__price">179 000 руб</div>
-                </div>
-              </label>
+                </label>
+              </div>
+
             </fieldset>
           </li>
 
 
           <li class="form-list__item form-list__item--date">
             <label class="form-list__label" for="date">Даты тура</label>
-            <input class="form-list__input" type="date" id="date" name="date" placeholder="23.06 - 04.07" required>
+            <input 
+            class="form-list__input _req" 
+            type="date" 
+            id="date" 
+            name="date" 
+            placeholder="23.06 - 04.07" 
+            >
           </li>
 
           <li class="form-list__item">
             <label class="form-list__label" for="msg">Комментарий</label>
-            <textarea class="form-list__input" id="msg" name="user_message" placeholder="Напишите ваш комментарий здесь"></textarea>
+            <textarea 
+            class="form-list__input _req" 
+            id="msg" 
+            name="message" 
+            placeholder="Напишите ваш комментарий здесь"
+            ></textarea>
           </li>
           <li class="form-list__item">
             <button class="form-list__button" type="submit">Отправить заявку</button>
@@ -79,8 +124,15 @@
         <h3 class="email__title">Что нужно знать отправляясь на  Камчатку?</h3>
         <span class="email__subtitle">Получите памятку туриста просто оставив свой e-mail.</span>
         <label class="email__inner" for="email">
-          <input class="email__input" form="form" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
-          <button class= "email__btn" type="button">Получить</button>
+          <input 
+          class="email__input _email _req" 
+          form="form" 
+          type="email" 
+          name="email" 
+          id="email" 
+          placeholder="Ваш e-mail" 
+          >
+          <button class= "email__btn" type="submit">Получить</button>
         </label>
       </div>
 
