@@ -47,3 +47,28 @@ body {
   width: 100%;
 }
 
+._anim-show {
+  transform: translate(0%, 120%);
+  opacity: 0;
+  transition: opacity .6s ease, transform .6s ease ;
+}
+._anim-show-right {
+  transform: translate(120%, 0%);
+  opacity: 0;
+  transition: opacity .6s ease, transform .6s ease ;
+}
+._anim-show-left {
+  transform: translate(-120%, 0%);
+  opacity: 0;
+  transition: opacity .6s ease, transform .6s ease ;
+}
+._anim-show._active,
+._active ._anim-show,
+._anim-show-left._active,
+._active ._anim-show-left,
+._anim-show-right._active,
+._active ._anim-show-right {
+  transform: translate(0%, 0%);
+  opacity: 1;
+  transition: opacity .6s ease, transform .6s ease ;
+}

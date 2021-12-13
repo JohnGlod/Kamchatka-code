@@ -1,20 +1,4 @@
 .week {
-/*   Выглядит не очень 
-@media (min-width: 1200px) {
-    position: relative;
-    &::before{
-      content: '';
-      position: absolute;
-      top: 100px;
-      left: 20px;
-      width: 100%;
-      height: 100%;
-      background-image: url('../../img/icons/track.svg');
-      background-repeat: no-repeat;
-      z-index: 2;
-    }
-  } 
-  */
   &__title {
     font-family: $fontFamilySecond;
     font-weight: 700;
@@ -63,8 +47,27 @@
   &__link {
     color: inherit;
     text-decoration: underline;
+    &:hover, :focus a{
+      color: var(--color-secondary);
+    }
   }
+
 }
+
+._anim-items > .week__text:nth-child(2){
+  transition-delay: .3s;
+}
+._anim-items > .week__text:nth-child(3){
+  transition-delay: .6s;
+}
+._anim-items > .week__text:nth-child(4){
+  transition-delay: .9s;
+}
+._anim-items > .week__text:nth-child(5){
+  transition-delay: .12s;
+}
+
+
 //================== arrival (day-1)  ===============//
 .arrival {
   position: relative;
@@ -344,9 +347,12 @@
 
 .helicopter {
   position: relative;
-  //min-height: 100vh;
   padding: 50px 0;
   &__body {
+    
+  }
+  &__title {
+    max-width: 800px;
   }
   &__top {
     p {

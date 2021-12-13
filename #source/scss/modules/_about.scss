@@ -154,6 +154,7 @@
   row-gap: 40px;
   margin-bottom: 250px;
   max-width: 760px;
+
   @media (min-width: 768px) {
     margin-bottom: 42%;
   }
@@ -165,9 +166,10 @@
     word-break: break-word;
     @media (min-width: 768px) {
       flex-basis: 25%;
-
     }
+
   }
+
   &__logo {
     width: 32px;
     height: 32px;
@@ -208,3 +210,14 @@
     color: inherit;
   }
 }
+
+.data__item._anim-show:nth-child(2){
+  transition-delay: .3s;
+}
+.data__item._anim-show:nth-child(3){
+  transition-delay: .6s;
+}
+.data__item._anim-show:nth-child(4){
+  transition-delay: .9s;
+}
+

@@ -1,5 +1,4 @@
 const buttonСounterElem = document.querySelector('.number');
-const formFeedback = document.querySelector('#form-answer');
 const form = document.forms['form'];
 
 const counterChange = (e) =>
@@ -50,7 +49,7 @@ const formSend = async (e) => {
   const email = document.querySelector('#email');
   const quantity = document.querySelector('#quantity');
   const date = document.querySelector('#date');
-  const message = document.querySelector('#msg');
+  const message = document.querySelector('#message');
   const name = document.querySelector('#name');
   const tariff = document.querySelector('input[name="tariff"]:checked');
 
@@ -64,26 +63,24 @@ const formSend = async (e) => {
   };
 
   const error = formValidate(form);
-  const formData = new FormData(form);
-  console.log(`Данные с формы ${formData}`);
 
   if (!error) {
+    form.classList.add('_sending');
+
     const response = await fetch('/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify(data),
     });
 
     if (response.ok) {
-      form.classList.add('_sending');
-      const result = await response.json();
-      /*
-      дописать функционал
-      */
+      alert('Заявка успешно отправлена!');
+      form.reset();
+      form.classList.remove('_sending');
     } else {
-      alert('Ошибка!');
+      alert('Упс, что-то пошло не так!');
     }
   } else {
     alert('Заполните необходимые поля. ');

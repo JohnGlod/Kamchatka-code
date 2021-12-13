@@ -30,6 +30,15 @@
     line-height: 120%;
     margin-bottom: 24px;
     max-width: 600px;
+    
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: transform .8s ease;
+    &._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
     @media (min-width: 768px) {
       font-size: 56px;
       line-height: 114%;
@@ -49,6 +58,16 @@
     padding: 16px 8px;
     text-transform: uppercase;
     margin-bottom: 40px;
+
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: transform .8s ease;
+    &._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
+
     @media (min-width: 768px) {
       font-size: 30px;
       line-height: 187%;
@@ -60,18 +79,32 @@
     font-size: 18px;
     line-height: 156%;
     margin-bottom: 16px;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: transform .8s ease;
+    &._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all .8s ease .4s;
+    }
+
     @media (min-width: 768px) {
       font-size: 20px;
       line-height: 140%;
       max-width: 380px;
     }
   }
-
-  &__important {
-
-    
+  &__btn {
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: transform .8s ease;
+    &._active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+      transition: all .8s ease .4s;
+    }
   }
-
   &__social {
     position: absolute;
     bottom: 4%;
@@ -82,5 +115,6 @@
       bottom: 12vh;
     }
   }
+  
 }
 
